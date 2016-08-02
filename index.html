@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Get Weather Conditions From Anywhere!</h1>
+      <label for="location">Enter a location:</label>
+      <input id="location" type="text">
+      <button class="btn-success" id="humidityLocation">Get Current Humidity!</button>
+      <button class="btn-success" id="temperatureLocation">Get Current Temperature!</button>
+      <div class="showTemperature"></div>
+      <div class="showHumidity"></div>
+    </div>
+    <div class="container">
+      <h1>See which city is hotter!!!</h1>
+      <label for="location1">Enter a location:</label>
+      <input id="location1" type="text">
+      <label for="location2">Enter <em>ANOTHER</em> location:</label>
+      <input id="location2" type="text">
+      <button class="btn-success" id="find-out">Find out which city is <em>HOTTER</em></button>
+      <div id="hotter-city"></div>
+      <div id="temperature-difference"></div>
+    </div>
+  </body>
+</html>
