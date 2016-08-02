@@ -12,6 +12,7 @@
       <input id="location" type="text">
       <button class="btn-success" id="humidityLocation">Get Current Humidity!</button>
       <button class="btn-success" id="temperatureLocation">Get Current Temperature!</button>
+      <button class="btn-success" id="toFahrenheit" type="button">Show in Fahrenheit</button>
       <div class="showTemperature"></div>
       <div class="showHumidity"></div>
     </div>
@@ -21,6 +22,12 @@
       <input id="location1" type="text">
       <label for="location2">Enter <em>ANOTHER</em> location:</label>
       <input id="location2" type="text">
+      <label for="">Show temperature in:</label>
+      <select id="unit">
+        <option id="celcius" value="metric">Celcius</option>
+        <option id="fahrenheit" value="imperial">Fahrenheit</option>
+        <option id="kelvin" value="default">Kelvin</option>
+      </select>
       <button class="btn-success" id="find-out">Find out which city is <em>HOTTER</em></button>
       <div id="hotter-city"></div>
       <div id="temperature-difference"></div>

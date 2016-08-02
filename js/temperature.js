@@ -3,6 +3,10 @@ function Temperature() {
   this.temperatureDifference;
 }
 
+Temperature.prototype.celsiusToFahrenheit = function(temp) {
+  return temp * 9 / 5 + 32;
+};
+
 Temperature.prototype.whichIsHotter = function(cityName, cityTemp, otherCityName, otherCityTemp) {
   var firstTemp = cityTemp;
   var secondTemp = otherCityTemp;
@@ -15,5 +19,6 @@ Temperature.prototype.whichIsHotter = function(cityName, cityTemp, otherCityName
     this.hotterCity = otherCityName;
   }
 };
+
 
 exports.temperatureModule = Temperature;
